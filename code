@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae, modified version
+% LaTeX Template
+% Version 1.1 (September 10, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Stefano (https://www.kindoblue.nl)
+% Vel (vel@LaTeXTemplates.com)
+% Heavily customized by Andrew
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+\usepackage{scrlayer-scrpage} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{microtype} % To enable letterspacing
+\usepackage[a4paper,
+            left=0.25in,
+            right=0.25in,
+            top=0.5in,
+            bottom=0.5in]{geometry}
+
+\usepackage[colorlinks=true,allcolors=SlateBlue3]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[x11names]{xcolor}
+
+ 
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+%\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+%\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.96}} % Custom highlighting for the work experience and education sections
+%----------------------------------------------------------------------------------------
+\begin{document}
+\begin{center} % Center everything in the document
+%----------------------------------------------------------------------------------------
+%     HEADER SECTION
+%----------------------------------------------------------------------------------------
+{\fontsize{20}{10}\selectfont\scshape\textls[200]{Andrew W. Soria-Quiroz}}\\ % Your name at the top
+\vspace{0.20cm} % Extra whitespace after the large name at the top
+Bentonville, AR | 703-206-8102 | \href{mailto:asoriaqu@gmu.edu}{Email}  | \href{https://www.linkedin.com/in/andrew-soria-quiroz/}{LinkedIn Profile} | \href{http://personalporfoliomis341.s3-website-us-east-1.amazonaws.com/}{Portfolio} | \href{https://www.youtube.com/@analyticsmindset/videos}{YouTube Channel}\\
+\section{\textcolor{SlateBlue4}{\textbf{Work Experience}}}
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Employer & \textbf{Walmart} \hfill Bentonville, AR\\
+\gray Job Title & \textbf{Supply Chain Analyst II – Visualization, Insights, and Analytics} \hfill January 2022 – Present\\
+$\bullet$ & Providing reporting using data cleansing, manipulation, and transformations in 40+ tools to drive insights in Big Query, Tableau Prep, Dataiku, MS SQL Server, Presto, Oracle, Python, and Informix\\
+$\bullet$ & Assisting with onboarding, training, development, and general education of 10+ employees\\
+$\bullet$ & Supporting 20+ diverse stakeholders on critical data needs and reporting on an agile environment and a 200+ billion-dollar transportation network\\
+$\bullet$ & Exploring, maintaining, and documenting 40+ visibility tools on a daily basis\\
+\gray Job Title & \textbf{Inbound Supply Chain Transportation Intern} \hfill May 2021 – August 2021\\
+$\bullet$ & Interacted with a diverse group of stakeholders in order to identify and plan a reporting solution\\
+$\bullet$ & Implemented major visualization solutions using a Logistic Regression model\\
+$\bullet$ & Identified and incorporated stakeholder’s feedback into 5+ visibility tools using agile methodologies\\
+$\bullet$ & Discovered and solved over 20 urgent data refresh requests from operational databases\\
+\gray Job Title & \textbf{Personal Shopper} \hfill April 2020 – September 2020\\
+$\bullet$ & Contacted over 10 customers daily with reminders about their orders and coordinated 100+ drivers
+\end{tabularx}
+
+\vspace{5pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Employer & \textbf{George Mason University} \hfill Fairfax County, VA\\
+\gray Job Title & \textbf{Shift Lead} \hfill July 2021 – December 2021\\
+$\bullet$ &  Solved 30+ daily customer inquiries by understanding their situation to provide adequate information\\
+$\bullet$ & Completed over 10 learning and training activities for 15+ employees\\
+$\bullet$ & Generated 3 daily reports from unstructured data sources\\
+\end{tabularx}
+
+\vspace{5pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Employer & \textbf{United Airlines} \hfill Dulles, VA\\
+\gray Job Title & \textbf{Operations Intern} \hfill June 2018 – August 2018\\
+$\bullet$ & Recorded 50 payroll adjustments and verified over 40 purchasing contracts weekly\\
+$\bullet$ & Shadowed and supported over 20 employees on their daily tasks and duties
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%     EDUCATION
+%----------------------------------------------------------------------------------------
+\section{\textcolor{SlateBlue4}{\textbf{Education}}}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Degree & \textbf{Master of Science in Data Analytics Engineering}\\
+\gray University & \textbf{George Mason University College of Engineering and Computing} \hfill Fairfax County, VA\\
+Coursework & Visualization for Analytics – Decision and Risk Analysis – Data Management and Mining – Applied Predictive Analytics – Knowledge Mining from Big Data – Systems Analysis and Design\\
+%& Extra information about degree
+\end{tabularx}
+
+\vspace{5pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Degree & \textbf{Bachelor of Science in Business Analytics / Operations and Supply Chain Management / Management Information Systems}\\
+\gray University & \textbf{George Mason University School of Business} \hfill Fairfax County, VA\\
+%& Extra information about degree
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%     SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{SlateBlue4}{\textbf{Skills}}}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Python, R, Java \\
+ETL Tools  & Tableau Prep, Dataiku, Alteryx, SSIS, Power Automate, Azure ML \\
+Databases & MS SQL Server, Big Query, Oracle, Informix, Presto \\
+Languages & Spanish, English, and Portuguese\\
+Other Skills & Machine Learning, Spark, Data Modeling, Data Visualization, Simulation \\
+& Optimization, Statistical Inference, Database Administration
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%     PROFESSIONAL CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{SlateBlue4}{\textbf{Professional Certifications}}}
+\begin{tabular}{l l}
+Certified Associate in Project Management (CAPM), 2021 & Tableau Certified Desktop Specialist, 2023 \\
+Certified Scrum Product Owner (CSPO), 2023 & Dataiku Core Designer, 2023 \\
+Microsoft Azure AI Fundamentals, 2023 & AWS Certified Cloud Practitioner (CCP), 2021 \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%     PROFESSIONAL CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+\end{center}
+\end{document}
